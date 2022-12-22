@@ -3,7 +3,7 @@ function pureParallax(customOptions) {
 	// pureParallax V.1.0 -- Peter Ballasiotes -- 2022-11-26
 	
 	let options = {
-		selector: '[data-depth]',
+		selector: '[data-plx]',
 		axisSelector: 'parallax-x',
 		bgSelector: 'parallax-bg',
 		bgTopSelector: 'parallax-bg-top',
@@ -186,7 +186,7 @@ function pureParallax(customOptions) {
 			
 			offsetDistTop = window.pageYOffset;
 			
-			depth = element.getAttribute('data-depth');
+			depth = element.getAttribute('data-plx');
 			
 			// Check if element container visible and for screen width
 			if (checkConditions(container)) {
